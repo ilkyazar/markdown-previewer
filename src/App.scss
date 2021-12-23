@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  font-family: Poppins;
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+  max-width: 50%;
+  height: 100vh;
+  overflow: scroll;
+
+  &.editor {
+    background-color: #42413f;
+    color: white;
+    textarea {
+      width: 99%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      color: white;
+      resize: none;
+      outline: none;
+    }
+  }
+
+  .column-header {
+    background-color: #2e2d2c;
+    color: white;
+    box-sizing: border-box;
+    padding: 16px;
+    font-weight: bold;
+  }
+}
